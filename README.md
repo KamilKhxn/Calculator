@@ -1,0 +1,1 @@
+Calculator App made with JavaScript, CSS and html. Live demo: 
