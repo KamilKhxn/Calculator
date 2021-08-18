@@ -4,10 +4,11 @@
     box-sizing: border-box;
 }
 .container{
+    /* border: solid 10px red;  */
+    background-color: #FCB31C;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 10px red; 
     width: 100%;
     height: 100vh
 }
@@ -16,7 +17,7 @@
     height: 580px;
     border: solid 3px black;
     border-radius: 15px;
-    background-color: #b1aeae;
+    background-color: #212121;
 }
 .screen{
     background-color: white;
