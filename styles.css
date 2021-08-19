@@ -4,9 +4,12 @@
     box-sizing: border-box;
     color: white;
 }
+body{
+
+    background-color: #FCB31C;
+}
 .container{
     /* border: solid 10px red;  */
-    background-color: #FCB31C;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,5 +91,30 @@ button{
     margin:3px;
     width: 80px;
     /* background-color: white; */
-
 }
+footer{
+    /*border: 10px solid pink;*/
+    color:black;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+
+  
+  a:visited {
+    color: black;
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    color: red;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: red;
+    text-decoration: underline;
+  }
