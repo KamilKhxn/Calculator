@@ -29,9 +29,7 @@ btn.forEach(button => {
             arr.push(value);
             input(arr);
         }
-
     });
-
 });
 
 function input(buttonPressed) {
@@ -88,19 +86,19 @@ function input(buttonPressed) {
 
 function operate(num1, num2, operator) {
     switch (operator) {
-        case '+':
+        case ' + ':
             add(num1, num2);
             return answer;
             break;
-        case '-':
+        case ' - ':
             sub(num1, num2);
             return answer;
             break;
-        case 'x':
+        case ' x ':
             multiply(num1, num2);
             return answer;
             break;
-        case '÷':
+        case ' ÷ ':
             divide(num1, num2);
             return answer;
             break;

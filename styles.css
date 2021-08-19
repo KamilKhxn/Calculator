@@ -38,6 +38,7 @@
     /* height: 30px; */
     height: 27%;
     font-size: 17px;
+    color: #60A07F;
 }
 .current{
     /*border: solid 2px black;*/
@@ -59,11 +60,21 @@ button{
     border: solid 2px black;
     font-size: 17px;
     background-color: #767676;
-
+    
 }
 .bigBtn{
     width: 170px;
     margin-bottom: 10px;    
+}
+.bigBtn:hover {
+    background-color:red;
+}
+#operation:hover {
+    background:rgb(38, 245, 245);
+}
+#equal:hover{
+    background:green;
+
 }
 #deleteBtn{
     margin-left: 8px;
