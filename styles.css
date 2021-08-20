@@ -2,14 +2,11 @@
     margin: 0;
     padding: 0; 
     box-sizing: border-box;
-    color: white;
 }
 body{
-
     background-color: #FCB31C;
 }
 .container{
-    /* border: solid 10px red;  */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +19,7 @@ body{
     border: solid 3px black;
     border-radius: 15px;
     background-color: #212121;
+    color: white;
 }
 .screen{
     background-color: #3B3B3B;
@@ -35,24 +33,19 @@ body{
     text-align: end;
 }
 .fullExpression{
-    /*border: solid 2px black;*/
     margin-top: 10px;
     margin-right: 15px;
-    /* height: 30px; */
     height: 27%;
     font-size: 17px;
     color: #60A07F;
 }
 .current{
-    /*border: solid 2px black;*/
-    /* height: 60px; */
     height: 55%;
     margin-top: 10px;
     margin-right: 15px;
     font-size: 34px;
 }
 .keypad{
-    /*border: solid 1px green;*/
     width: 360px;
     height: 390px;
     margin-left: 27px;
@@ -63,7 +56,10 @@ button{
     border: solid 2px black;
     font-size: 17px;
     background-color: #767676;
-    
+    color: white;
+}
+button:hover{
+    cursor: pointer;
 }
 .bigBtn{
     width: 170px;
@@ -71,50 +67,48 @@ button{
 }
 .bigBtn:hover {
     background-color:red;
+    color: black;
 }
 #operation:hover {
     background:rgb(38, 245, 245);
+    color: black;
+
 }
 #equal:hover{
-    background:green;
-
+    background:rgb(51, 205, 50);
+    color: black;
 }
 #deleteBtn{
     margin-left: 8px;
-    /* background-color: rgb(71, 71, 240); */
 }
 #clearBtn{
     margin-left: 2px;
-    /* background-color: rgb(240, 62, 62); */
 }
 .btn{
     margin:3px;
     width: 80px;
-    /* background-color: white; */
 }
-footer{
-    /*border: 10px solid pink;*/
+.footer{    
     color:black;
     position: absolute;
     bottom:0;
     width: 100%;
+    height: 10px;
     text-align: center;
-    padding-bottom: 2%;
-}
-
-
-  
-  a:visited {
+    padding-bottom: 3%;
+    font-size: 18px;
+} 
+a:visited {
     color: black;
     text-decoration: underline;
-  }
-  
-  a:hover {
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:active {
     color: red;
     text-decoration: underline;
-  }
-  
-  a:active {
-    color: red;
-    text-decoration: underline;
-  }
+}
