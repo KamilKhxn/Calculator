@@ -1,3 +1,4 @@
+// attributes
 const btn = document.querySelectorAll('button');
 const current_span = document.querySelector('.current');
 const fullExpression_span = document.querySelector('.fullExpression');
@@ -9,6 +10,7 @@ let operator;
 let answer;
 let expression;
 
+//saves text of button pressed into array
 btn.forEach(button => {
     button.addEventListener('click', () => {
         let value = button.innerHTML;
@@ -17,6 +19,7 @@ btn.forEach(button => {
             input(arr);
         }
         else if (value === '=') {
+            //pushes an empty value - the equal button doesnt show on the screen
             arr.push('');
             equalPressed(expression);
         }
@@ -27,14 +30,18 @@ btn.forEach(button => {
     });
 });
 
+//finds the index of the operator and splits the array into two parts
+//before operator - valueOne
+//after operator - valueTwo
+
 function input(buttonPressed) {
 
     for (let i = 0; i <= buttonPressed.length - 1; i++) {
-
         if (isNaN(buttonPressed[i]) && buttonPressed[i] !== '=') {
             operator = buttonPressed[i];
             index = i;
         }
+        //displays buttons pressed onto 'screen;
         current_span.innerHTML = buttonPressed.join('');
         valueOne = buttonPressed.slice(0, index).join('');
         valueTwo = buttonPressed.slice(index + 1, buttonPressed.length).join('');
@@ -53,9 +60,7 @@ function input(buttonPressed) {
 function operate(num1, num2, operator) {
     switch (operator) {
         case '+':
-            let a = parseInt(num1);
-            let b = parseInt(num2);
-            add(a, b);
+            add(parseInt(num1), parseInt(num2));
             return answer;
             break;
         case '-':
@@ -72,19 +77,18 @@ function operate(num1, num2, operator) {
             break;
     }
 }
+//clears array values and values displayed on window
 function clear() {
     arr.splice(0, arr.length);
     current_span.innerHTML = 0;
     fullExpression_span.innerHTML = "";
     operator = null;
     index = null;
-    console.log('used clear function');
 }
+//adds expression to top of screen and displays answer to the bottom
 function equalPressed(expression) {
-    console.log('used equalPressed() function');
     fullExpression_span.innerHTML = expression;
     current_span.innerHTML = operate(valueOne, valueTwo, operator);
-
 }
 function deleted() {
     //todo
