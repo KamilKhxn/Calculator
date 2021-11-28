@@ -3,7 +3,7 @@
 # Calculator
 ![Calculator](images/calculator.png)
 
-An online calculator with basic arithmetic operations built using HTML5, CSS3 and JavaScript. It is controlled by your mouse. To tyr your own calculations check out the live demo [here](https://kamilkhxn.github.io/Calculator/).
+An online calculator with basic arithmetic operations built using HTML5, CSS3 and JavaScript. It is controlled by your mouse. To try your own calculations, check out the live demo [here](https://kamilkhxn.github.io/Calculator/).
 
 
 ### What I Learned
@@ -23,5 +23,5 @@ An online calculator with basic arithmetic operations built using HTML5, CSS3 an
 ## Resources    
 [The Odin Project - DOM Manipulation ](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/dom-manipulation)
 
-[The Odin Project - DOM Manipulation ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+[MDN - Array ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
