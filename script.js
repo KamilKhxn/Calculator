@@ -90,9 +90,9 @@ function equalPressed(expression) {
     fullExpression_span.innerHTML = expression;
     current_span.innerHTML = operate(valueOne, valueTwo, operator);
 }
-function deleted() {
-    //todo
-}
+// function deleted() {
+//     //todo
+// }
 function add(a, b) {
     answer = a + b;
     return answer;
