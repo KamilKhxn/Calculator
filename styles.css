@@ -62,7 +62,7 @@ button:hover{
     cursor: pointer;
 }
 .bigBtn{
-    width: 170px;
+    width: 350px;
     margin-bottom: 10px;    
 }
 .bigBtn:hover {
